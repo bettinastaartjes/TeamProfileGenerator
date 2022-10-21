@@ -47,8 +47,8 @@ const promptManager = () => {
     }
 ]).then(answers => {
     console.log(answers);
-    const manage = new Manager(answers.name, answers.id, answers.email, answers.officeNumber)
-    teamMembers.push(Manager);
+    const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber)
+    teamMembers.push(manager);
     promptMenu();
 })
 };
